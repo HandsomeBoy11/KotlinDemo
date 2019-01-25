@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gfd.home">
+
+    <application>
+        <activity android:name=".ui.activity.SearchActivity" />
+        <activity android:name=".ui.activity.CategoryActivity"/>
+    </application>
+</manifest>

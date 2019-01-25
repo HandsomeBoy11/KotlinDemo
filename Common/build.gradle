@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply from:rootProject.file('libbase.gradle')
+
+dependencies {
+
+    api dependence.libSupportV7
+    api dependence.libSupportV4
+
+    api dependence.libKotlinJre7
+    api dependence.libDesign
+    api dependence.libRecyclerview
+
+    api dependence.libGlide
+
+    api dependence.libRetrofit
+    api dependence.libRetrofitConvert
+    api dependence.libRetrofitAdapter
+
+    api dependence.libOkhttp
+    api dependence.libokhttp3LoggingInterceptor
+
+    api dependence.libRxkotlin
+
+    api dependence.libRxlifecycle2
+
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    api dependence.libDagger
+    api dependence.libLogger
+
+    api dependence.libBottomBar
+    api dependence.libLRecyclerView
+    api dependence.libLJsoup
+    api dependence.libOkgo
+    api dependence.libBanner
+    api dependence.libArouter
+    api dependence.libFlexbox
+    api dependence.libAnkoSqlite
+    api dependence.libCardview
+    api dependence.libPalette
+    api dependence.libCircleImageView
+    api dependence.libBugly
+    api dependence.libRhinoAndroid
+    api files('libs/tbs_sdk_thirdapp_v3.6.0.jar')
+}

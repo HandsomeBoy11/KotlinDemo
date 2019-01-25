@@ -1,0 +1,26 @@
+apply plugin: 'com.gfd.comswitch'
+apply from:rootProject.file('libbase.gradle')
+
+kapt {
+    arguments {
+        arg("moduleName", project.getName())
+    }
+}
+
+android {
+
+    //规定资源命名前缀为home_
+    resourcePrefix "home_"
+
+}
+
+dependencies {
+    api project(':Provider')
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    kapt "com.alibaba:arouter-compiler:$arouter_compiler_version"
+}
+
+combuild {
+    applicationName = 'com.gfd.home.app.HomeApplication'
+    isRegisterAuto = false
+}
